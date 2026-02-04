@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fresarte – Quiénes Somos</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+
 <style>
-/* ====== ESTILOS ORIGINALES ====== */
 :root{
     --fresa:#f06a9b;
     --rosita:#ffd7e5;
@@ -18,7 +19,12 @@
     --white:#fff;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:"Nunito", sans-serif;}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Nunito", sans-serif;
+}
 
 body{
     background:linear-gradient(180deg,var(--rosita-clara),var(--white));
@@ -35,6 +41,7 @@ body{
     z-index:999;
     box-shadow:0 0 18px rgba(0,0,0,0.2);
 }
+
 .fresarte-container{
     width:90%;
     max-width:1200px;
@@ -43,12 +50,7 @@ body{
     justify-content:space-between;
     align-items:center;
 }
-.fresarte-logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    text-decoration:none;
-}
+
 .logo-redondo{
     width:55px;
     height:55px;
@@ -63,13 +65,14 @@ body{
     display:flex;
     gap:20px;
 }
+
 .fresarte-nav a{
     text-decoration:none;
     color:#000;
     font-weight:600;
     padding:8px 12px;
-    position:relative;
 }
+
 .fresarte-nav a.active{
     background:#f5d5e0;
     color:#e63946;
@@ -77,7 +80,7 @@ body{
 }
 
 /* HERO */
-.hero{
+.hero-text{
     width:90%;
     max-width:1200px;
     margin:40px auto;
@@ -87,47 +90,59 @@ body{
     box-shadow:var(--shadow);
     text-align:center;
 }
+
 .hero-text h2{
-   font-family: 'Fredoka', sans-serif;
-    font-size: 36px;
-    font-weight: 900;
-    color: #e63946;
-    margin-bottom: 15px;
-    text-align: center;
+    font-family:'Fredoka', sans-serif;
+    font-size:36px;
+    font-weight:900;
+    color:#e63946;
+    margin-bottom:10px;
 }
 
 /* SECCIONES */
 main{
     padding:40px 5%;
 }
+
 .section{
     max-width:1100px;
     margin:auto;
     margin-bottom:3rem;
 }
+
 .section h3{
     color:var(--fresa);
     margin-bottom:1rem;
     font-size:1.8rem;
 }
+
 .section p{
     font-size:1.05rem;
     line-height:1.7;
     margin-bottom:1rem;
 }
 
-/* BLOQUES INFO */
+/* CARDS POP UP */
 .about-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:2rem;
 }
+
 .about-card{
     background:var(--white);
     padding:25px;
     border-radius:var(--radius);
     box-shadow:var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor:pointer;
 }
+
+.about-card:hover{
+    transform: translateY(-12px) scale(1.05);
+    box-shadow:0 18px 35px rgba(240,106,155,0.35);
+}
+
 .about-card h4{
     color:var(--fresa);
     margin-bottom:.7rem;
@@ -145,17 +160,16 @@ footer{
 
 <body>
 
-<!-- HEADER -->
 <header class="fresarte-header">
     <div class="fresarte-container">
-        <a class="fresarte-logo" href="index.html">
+        <a href="index.html">
             <img src="logo.jpg" alt="Logo Fresarte" class="logo-redondo">
         </a>
 
         <nav class="fresarte-nav">
-              <ul>
-                <li><a href="index.html" >Inicio</a></li>
-                <li><a href="Quienessomos.html"class="active">Quienes somos</a></li>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Quienessomos.html" class="active">Quienes somos</a></li>
                 <li><a href="menu-fresarte.html">Productos</a></li>
                 <li><a href="Sucursales.html">Sucursales</a></li>
                 <li><a href="contactos.html">Contacto</a></li>
@@ -165,68 +179,81 @@ footer{
     </div>
 </header>
 
-<!-- HERO -->
 <section class="hero-text">
     <h2>Quiénes Somos 🍓</h2>
-    <center><p>Conoce la historia detrás de cada FRESARTE</p></center>
-    
-    
+    <p>Conoce la historia detrás de cada FRESARTE</p>
 </section>
 
 <main>
 
-    <section class="section">
-        <h3>Nuestra Historia</h3>
-        <p>
-            Fresarte nace del amor por las frutas frescas, los sabores auténticos y
-            la idea de convertir cada bowl en una experiencia especial para ti.
-            Empezamos como un pequeño proyecto con una gran pasión: crear postres
-            artesanales que se vean tan bien como saben.
-        </p>
-        <p>
-            Cada receta está pensada con cuidado, combinando ingredientes de calidad,
-            creatividad y ese toque dulce que nos caracteriza.
-        </p>
-    </section>
+<section class="section">
+    <h3>Nuestra Historia</h3>
+    <p>
+        Fresarte nace del amor por las frutas frescas, los sabores auténticos y
+        la idea de convertir cada bowl en una experiencia especial para ti.
+        Empezamos como un pequeño proyecto con una gran pasión: crear postres
+        artesanales que se vean tan bien como saben.
+    </p>
+    <p>
+        Desde el inicio, soñamos con una marca que transmitiera alegría,
+        creatividad y cercanía, donde cada detalle importara: desde la selección
+        de los ingredientes hasta la presentación final.
+    </p>
+    <p>
+        Con el tiempo, Fresarte se convirtió en más que un postre; se volvió una
+        forma de celebrar momentos, consentirte y disfrutar lo dulce de la vida
+        con un toque fresco, delicado y único.
+    </p>
+</section>
 
-    <section class="section">
-        <h3>Lo que nos define</h3>
+<section class="section">
+    <h3>Lo que nos define</h3>
 
-        <div class="about-grid">
-            <div class="about-card">
-                <h4>🍓 Calidad</h4>
-                <p>
-                    Usamos frutas frescas y cremas seleccionadas para garantizar
-                    un sabor delicioso en cada orden.
-                </p>
-            </div>
-
-            <div class="about-card">
-                <h4>🎨 Creatividad</h4>
-                <p>
-                    Cada Fresarte es una obra comestible, hecha para que disfrutes
-                    tanto el sabor como la presentación.
-                </p>
-            </div>
-
-            <div class="about-card">
-                <h4>🤍 Personalización</h4>
-                <p>
-                    Creemos que cada cliente es único, por eso puedes crear tu
-                    Fresarte a tu gusto.
-                </p>
-            </div>
+    <div class="about-grid">
+        <div class="about-card">
+            <h4>🍓 Calidad</h4>
+            <p>
+                Seleccionamos cuidadosamente frutas frescas y cremas de alta
+                calidad para ofrecerte siempre un sabor auténtico y delicioso.
+            </p>
         </div>
-    </section>
 
-    <section class="section">
-        <h3>Nuestra Misión</h3>
-        <p>
-            Endulzar tus momentos especiales ofreciendo postres frescos,
-            personalizados y llenos de amor, manteniendo siempre nuestra esencia
-            artesanal.
-        </p>
-    </section>
+        <div class="about-card">
+            <h4>🎨 Creatividad</h4>
+            <p>
+                Cada Fresarte es una obra comestible, diseñada para enamorar a
+                simple vista y sorprender en cada bocado.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h4>🤍 Personalización</h4>
+            <p>
+                Creemos que cada cliente es único, por eso puedes crear tu
+                Fresarte a tu gusto y hacerlo completamente especial.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h3>Nuestra Misión</h3>
+    <p>
+        Endulzar tus momentos especiales ofreciendo postres frescos,
+        personalizados y llenos de amor, manteniendo siempre nuestra esencia
+        artesanal.
+    </p>
+    <p>
+        Nos esforzamos por brindar una experiencia que combine sabor, calidad y
+        presentación, cuidando cada detalle para que cada Fresarte refleje
+        dedicación, creatividad y pasión.
+    </p>
+    <p>
+        Queremos que cada cliente se sienta parte de nuestra historia, creando
+        recuerdos dulces que se disfruten tanto con el paladar como con el
+        corazón.
+    </p>
+</section>
 
 </main>
 
@@ -235,4 +262,4 @@ footer{
 </footer>
 
 </body>
-</html>
+    </html>
