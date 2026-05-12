@@ -155,6 +155,66 @@ footer{
     background:var(--texto);
     color:var(--white);
 }
+
+
+.mission-section{
+    max-width:800px;
+    margin:0;
+    padding:40px;
+}
+
+.mission-section h1{
+    margin-bottom:30px;
+}
+
+/* línea vertical */
+.mission-line{
+    position:relative;
+    padding-left:40px;
+}
+
+/* línea decorativa */
+.mission-line::before{
+    content:"";
+    position:absolute;
+    left:18px;
+    top:0;
+    bottom:0;
+    width:2px;
+    background:#f1c7d0;
+}
+
+/* cada bloque */
+.mission-step{
+    position:relative;
+    margin-bottom:30px;
+}
+
+/* puntos */
+.dot{
+    position:absolute;
+    left:-40px;
+    width:36px;
+    height:36px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff;
+    border:2px solid #f1c7d0;
+    border-radius:50%;
+    font-size:18px;
+}
+
+/* texto */
+.content p{
+    margin:0;
+    color:#444;
+    line-height:1.7;
+    background:transparent;
+}
+.mission-section h1{
+    color:#f06a9b;
+}
 </style>
 </head>
 
@@ -192,17 +252,21 @@ footer{
         Fresarte nace del amor por las frutas frescas, los sabores auténticos y
         la idea de convertir cada bowl en una experiencia especial para ti.
         Empezamos como un pequeño proyecto con una gran pasión: crear postres
-        artesanales que se vean tan bien como saben.
+        artesanales que se vean tan bien como saben, utilizando ingredientes de
+        calidad y combinaciones cuidadosamente pensadas para ofrecer sabores
+        únicos, frescos y memorables que puedan disfrutarse en cualquier ocasión
+        especial o en esos pequeños momentos cotidianos que merecen algo dulce.
     </p>
-    <p>
-        Desde el inicio, soñamos con una marca que transmitiera alegría,
-        creatividad y cercanía, donde cada detalle importara: desde la selección
-        de los ingredientes hasta la presentación final.
-    </p>
+
+  
     <p>
         Con el tiempo, Fresarte se convirtió en más que un postre; se volvió una
         forma de celebrar momentos, consentirte y disfrutar lo dulce de la vida
-        con un toque fresco, delicado y único.
+        con un toque fresco, delicado y único. Cada creación representa el deseo
+        de compartir felicidad a través de sabores naturales, colores vibrantes y
+        presentaciones atractivas que hacen de cada experiencia algo especial,
+        manteniendo siempre el compromiso de ofrecer productos elaborados con
+        pasión, creatividad y mucho cuidado en cada detalle.
     </p>
 </section>
 
@@ -236,29 +300,51 @@ footer{
     </div>
 </section>
 
-<section class="section">
-    <h3>Nuestra Misión</h3>
-    <p>
-        Endulzar tus momentos especiales ofreciendo postres frescos,
-        personalizados y llenos de amor, manteniendo siempre nuestra esencia
-        artesanal.
-    </p>
-    <p>
-        Nos esforzamos por brindar una experiencia que combine sabor, calidad y
-        presentación, cuidando cada detalle para que cada Fresarte refleje
-        dedicación, creatividad y pasión.
-    </p>
-    <p>
-        Queremos que cada cliente se sienta parte de nuestra historia, creando
-        recuerdos dulces que se disfruten tanto con el paladar como con el
-        corazón.
-    </p>
+
+<section class="mission-section">
+    <h1>Nuestra Misión</h1>
+
+    <div class="mission-line">
+
+        <div class="mission-step">
+            <div class="dot">🍓</div>
+            <div class="content">
+                <p>
+                    Endulzar tus momentos especiales ofreciendo postres frescos,
+                    personalizados y llenos de amor, manteniendo siempre nuestra
+                    esencia artesanal.
+                </p>
+            </div>
+        </div>
+
+        <div class="mission-step">
+            <div class="dot">✨</div>
+            <div class="content">
+                <p>
+                    Brindar una experiencia que combine sabor, calidad y presentación,
+                    cuidando cada detalle para reflejar dedicación y creatividad.
+                </p>
+            </div>
+        </div>
+
+        <div class="mission-step">
+            <div class="dot">💖</div>
+            <div class="content">
+                <p>
+                    Crear recuerdos dulces que conecten con cada cliente y hagan de
+                    cada ocasión un momento especial.
+                </p>
+            </div>
+        </div>
+
+    </div>
 </section>
+
 
 </main>
 
 <footer>
-    <p>&copy; 2025 FRESARTE. Todos los derechos reservados.</p>
+    <p>&copy; 2026 FRESARTE. Todos los derechos reservados.</p>
 </footer>
 
 </body>
