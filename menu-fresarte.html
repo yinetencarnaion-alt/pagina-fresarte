@@ -189,27 +189,65 @@
             #cart-panel { width: 100%; right: -100%; }
         }
         /* CUSTOM FRESARTE */
+.custom-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-bottom: 0;
+}
+.custom-section h2 {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    color: var(--fresa);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+#custom-builder.grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    align-items: start;
+}
 .custom-step{
     background:var(--white);
-    padding:1.5rem;
+    padding:1rem 1.2rem;
     border-radius:var(--radius);
     border:2px solid var(--fresa);
+    height: auto;
+    min-height: unset;
 }
 .custom-step h3{
     color:var(--fresa);
-    margin-bottom:1rem;
+    margin-bottom:0.6rem;
+    font-size: 0.95rem;
+    font-family: 'Fredoka', sans-serif;
 }
 .custom-step ul{
     list-style:disc;
-    margin-left:1.5rem;
+    margin-left:1.2rem;
+    font-size: 0.85rem;
+    line-height: 1.7;
 }
-.nota-personalizada{
-    grid-column:1/-1;
-    text-align:center;
-    font-style:italic;
-    color:var(--fresa);
-    margin-top:1rem;
+.custom-step p {
+    font-size: 0.85rem;
+    line-height: 1.7;
 }
+
+/* NOTA / SLOGAN DE SECCIÓN */
+.nota-personalizada-wrapper {
+    text-align: center;
+    padding: 28px 20px 32px;
+    background: linear-gradient(135deg, var(--rosita-suave), #fff6fa);
+    margin-top: 2rem;
+    border-top: 2px solid var(--rosita);
+}
+.nota-personalizada-wrapper p {
+    font-style: italic;
+    color: var(--fresa);
+    font-size: 1.25rem;
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: 0.3px;
+}
+
 /* FOOTER */
 footer{
     text-align:center;
@@ -455,13 +493,12 @@ footer{
         }
     </script>
     <section id="crea" class="custom-section">
-        <h2><p style="text-align:center;">PREPARA TU FRESARTE</h2></p>
+        <h2>PREPARA TU FRESARTE</h2>
         <div id="custom-builder" class="grid-container">
-            <!-- Aquí irían los pasos del FRESARTE -->
             <div class="custom-step">
                 <h3>1. Bowl</h3>
-                <p>12 Oz - RD$ 400</p>
-                <p>16 Oz - RD$ 550</p>
+                <p>12 Oz – RD$ 400</p>
+                <p>16 Oz – RD$ 550</p>
             </div>
             <div class="custom-step">
                 <h3>2. Frutas</h3>
@@ -469,14 +506,14 @@ footer{
                     <li>Fresa</li>
                     <li>Mango</li>
                     <li>Uvas</li>
-                    <li>Melocoton</li>
+                    <li>Melocotón</li>
                     <li>Mixto</li>
                 </ul>
             </div>
             <div class="custom-step">
                 <h3>3. Crema</h3>
                 <ul>
-                    <li>Cco</li>
+                    <li>Coco</li>
                     <li>Vainilla</li>
                     <li>Chocolate</li>
                     <li>Pistacho</li>
@@ -497,28 +534,32 @@ footer{
                     <li>Nutella</li>
                     <li>Dulce de leche</li>
                     <li>Mermelada de fresa</li>
-                    <li>Biscof</li>
-                    <li>Crema de pitacho</li>
+                    <li>Biscoff</li>
+                    <li>Crema de pistacho</li>
                 </ul>
             </div>
             <div class="custom-step">
                 <h3>6. Topping extra</h3>
                 <ul>
-                    <li>Nutella </li>
+                    <li>Nutella</li>
                     <li>Dulce de leche</li>
                     <li>Biscoff</li>
                     <li>Chispas de chocolate</li>
                     <li>Frutos secos</li>
                     <li>Almendras</li>
-                    <li>M&M</li>
+                    <li>M&amp;M</li>
                     <li>Pistachos natural</li>
                     <li>Kataifi Horneado</li>
                     <li>Salsa de pistacho con chocolate italiano</li>
                 </ul>
             </div>
-        <h2> <p class="nota-personalizada">¡Combina tus ingredientes favoritos!</p></h2>
         </div>
     </section>
+
+    <div class="nota-personalizada-wrapper">
+        <p>🍓 ¡Combina tus ingredientes favoritos!</p>
+    </div>
+     
     <footer>
     <p>&copy; 2026 FRESARTE. Todos los derechos reservados.</p>
 </footer>
